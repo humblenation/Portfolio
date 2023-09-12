@@ -7,22 +7,6 @@ sidebarBtn.addEventListener("click", function(){
     elementToggleFunction(sidebar)
 });
 
-// Contact form
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn");
-
-// adding event to all from input field
-for(let i = 0; i < formInputs.length; i++){
-    formInputs[i].addEventListener("input", function(){
-        // check from validation
-        if(form.checkValidity()){
-            formBtn.removeAttribute("disabled");
-        }else{
-            formBtn.setAttribute("disabled", "");
-        }
-    });
-};
 
 // page navigation 
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
